@@ -1,0 +1,63 @@
+* {
+  list-style: none;
+}
+
+/*Style for background*/
+#root {
+  background-color: #e6dada;
+  min-height: 100vh;
+}
+
+/* Summery marker Style  */
+
+summary {
+  list-style: none;
+}
+
+summary::after {
+  content: '►';
+  font-size: 25px;
+  color: rgb(219, 99, 99);
+}
+details[open] summary:after {
+  content: '▼';
+  font-size: 25px;
+  color: rgb(219, 99, 99);
+}
+
+/*Style for tasks item to be dbl clicked */
+
+li {
+  cursor: pointer;
+}
+
+/*Font Awesome extra style*/
+i {
+  cursor: pointer;
+}
+
+/*Style for modal input*/
+.modalInput {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(134, 129, 129);
+}
+
+/*Hover Effect on buttons*/
+
+i:hover {
+  animation-name: vibrate;
+  animation-iteration-count: infinite;
+  animation-duration: 0.1s;
+  animation-direction: alternate;
+}
+
+@keyframes vibrate {
+  from {
+    transform: rotate(4deg);
+  }
+  to {
+    transform: rotate(-4deg);
+  }
+}
