@@ -1,3 +1,5 @@
+[check out the live version](https://keepin-up.netlify.app)
+
 # React To-do application
 ### This is my first react app, it has a global state managed by context and useReducer()
 ### Some other 3d party liberies are uuid, react-hot-toaster, vanilla bootstrap, React bootstrap.
